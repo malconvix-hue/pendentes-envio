@@ -17,7 +17,7 @@ th[data-c]{cursor:pointer;user-select:none} th[data-c]:hover{color:var(--fg)} th
 </style></head><body>
 <h1>Acompanhador de pendentes de envio</h1>
 <p class="sub">Vara Cível: 0 · Juizado Especial Cível: 0 · Registros Públicos: 0</p>
-<p class="sub"><b>Última atualização:</b> 16/10/2026 11:27 &nbsp;·&nbsp; <b>Próxima:</b> por volta das 12:27</p>
+<p class="sub"><b>Última atualização:</b> 16/10/2026 11:38 &nbsp;·&nbsp; <b>Próxima:</b> por volta das 12:38</p>
 <p class="sub" id="status"><span class="dot"></span><b id="st"></b></p>
 <p class="sub">Conclusões que serão enviadas ao juiz na próxima virada. Quem for avocado sai da lista.</p>
 <section><h2>Vara Cível <span>0</span></h2><p class='vazio'>Nenhum pendente de envio.</p></section><section><h2>Juizado Especial Cível <span>0</span></h2><p class='vazio'>Nenhum pendente de envio.</p></section><section><h2>Registros Públicos <span>0</span></h2><p class='vazio'>Nenhum pendente de envio.</p></section>
@@ -38,7 +38,7 @@ document.querySelectorAll("table").forEach(function(t){
   });
 });
 (function(){
-  var last=new Date("2026-10-16T11:27:11");
+  var last=new Date("2026-10-16T11:38:32");
   var el=document.getElementById("status"), st=document.getElementById("st");
   function tick(){
     var n=new Date(), h=n.getHours()+n.getMinutes()/60, util=n.getDay()>=1&&n.getDay()<=5;
