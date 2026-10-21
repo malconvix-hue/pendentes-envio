@@ -59,7 +59,7 @@ document.getElementById("ord").addEventListener("change",function(){ var p=this.
 document.getElementById("atu").addEventListener("click",function(){ this.textContent="Atualizando..."; location.href=location.pathname+"?v="+Date.now(); });
 ordenar(1,false);
 (function(){
-  var last=new Date("2026-10-21T19:34:14");
+  var last=new Date("2026-10-21T19:34:19");
   var el=document.getElementById("status"), st=document.getElementById("st");
   function tick(){
     var n=new Date(), h=n.getHours()+n.getMinutes()/60, util=n.getDay()>=1&&n.getDay()<=5;
