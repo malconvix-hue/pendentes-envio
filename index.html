@@ -29,7 +29,7 @@ th[data-c]{cursor:pointer;user-select:none} th[data-c]:hover{color:var(--fg)} th
 </style></head><body>
 <h1>Acompanhador de pendentes de envio</h1>
 <p class="sub">Vara Cível: 35 · Juizado Especial Cível: 6 · Registros Públicos: 0</p>
-<p class="sub"><b>Última atualização:</b> 23/10/2026 18:28 &nbsp;·&nbsp; <b>Próxima:</b> por volta das 18:33</p>
+<p class="sub"><b>Última atualização:</b> 23/10/2026 18:32 &nbsp;·&nbsp; <b>Próxima:</b> por volta das 18:37</p>
 <p class="sub" id="status"><span class="dot"></span><b id="st"></b></p>
 <div class="bar"><button id="atu" type="button">Atualizar</button>
 <select id="ord" aria-label="Ordenar por"><option value="1:desc">Mais recentes primeiro</option><option value="1:asc">Mais antigas primeiro</option><option value="0:asc">Processo mais antigo primeiro</option><option value="0:desc">Processo mais novo primeiro</option><option value="2:asc">Conclusão</option><option value="3:asc">Último ato</option></select></div>
@@ -59,7 +59,7 @@ document.getElementById("ord").addEventListener("change",function(){ var p=this.
 document.getElementById("atu").addEventListener("click",function(){ this.textContent="Atualizando..."; location.href=location.pathname+"?v="+Date.now(); });
 ordenar(1,false);
 (function(){
-  var last=new Date("2026-10-23T18:28:46");
+  var last=new Date("2026-10-23T18:32:22");
   var el=document.getElementById("status"), st=document.getElementById("st");
   function tick(){
     var n=new Date(), h=n.getHours()+n.getMinutes()/60, util=n.getDay()>=1&&n.getDay()<=5;
