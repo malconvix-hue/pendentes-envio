@@ -28,13 +28,13 @@ th[data-c]{cursor:pointer;user-select:none} th[data-c]:hover{color:var(--fg)} th
 }
 </style></head><body>
 <h1>Acompanhador de pendentes de envio</h1>
-<p class="sub">Vara Cível: 0 · Juizado Especial Cível: 0 · Registros Públicos: 0</p>
-<p class="sub"><b>Última atualização:</b> 23/10/2026 12:05 &nbsp;·&nbsp; <b>Próxima:</b> por volta das 12:35</p>
+<p class="sub">Vara Cível: 1 · Juizado Especial Cível: 0 · Registros Públicos: 0</p>
+<p class="sub"><b>Última atualização:</b> 23/10/2026 12:16 &nbsp;·&nbsp; <b>Próxima:</b> por volta das 12:46</p>
 <p class="sub" id="status"><span class="dot"></span><b id="st"></b></p>
 <div class="bar"><button id="atu" type="button">Atualizar</button>
 <select id="ord" aria-label="Ordenar por"><option value="1:desc">Mais recentes primeiro</option><option value="1:asc">Mais antigas primeiro</option><option value="0:asc">Processo mais antigo primeiro</option><option value="0:desc">Processo mais novo primeiro</option><option value="2:asc">Conclusão</option><option value="3:asc">Último ato</option></select></div>
 <p class="sub">Conclusões que serão enviadas ao juiz na próxima virada. Quem for avocado sai da lista.</p>
-<section><h2>Vara Cível <span>0</span></h2><p class='vazio'>Nenhum pendente de envio.</p></section><section><h2>Juizado Especial Cível <span>0</span></h2><p class='vazio'>Nenhum pendente de envio.</p></section><section><h2>Registros Públicos <span>0</span></h2><p class='vazio'>Nenhum pendente de envio.</p></section>
+<section><h2>Vara Cível <span>1</span></h2><table><thead><tr><th data-c='0'>Processo</th><th data-c='1'>Incluído em</th><th data-c='2'>Conclusão</th><th data-c='3'>Último ato</th></tr></thead><tbody><tr><td class='n' data-l='Processo' data-v='20100001989'>0001989-50.2010.8.16.0105</td><td class='n' data-l='Incluído em' data-v='2026-10-23T12:11'>23/10/2026 12:11</td><td data-l='Conclusão'>DECISÃO</td><td data-l='Último ato'>JUNTADA DE PETIÇÃO DE REQUERIMENTO DE DILIGÊNCIA</td></tr></tbody></table></section><section><h2>Juizado Especial Cível <span>0</span></h2><p class='vazio'>Nenhum pendente de envio.</p></section><section><h2>Registros Públicos <span>0</span></h2><p class='vazio'>Nenhum pendente de envio.</p></section>
 <script>
 function ordenar(c,asc){
   document.querySelectorAll("table").forEach(function(t){
@@ -59,7 +59,7 @@ document.getElementById("ord").addEventListener("change",function(){ var p=this.
 document.getElementById("atu").addEventListener("click",function(){ this.textContent="Atualizando..."; location.href=location.pathname+"?v="+Date.now(); });
 ordenar(1,false);
 (function(){
-  var last=new Date("2026-10-23T12:05:22");
+  var last=new Date("2026-10-23T12:16:03");
   var el=document.getElementById("status"), st=document.getElementById("st");
   function tick(){
     var n=new Date(), h=n.getHours()+n.getMinutes()/60, util=n.getDay()>=1&&n.getDay()<=5;
